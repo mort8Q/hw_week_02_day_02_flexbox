@@ -1,16 +1,30 @@
 
 /* header & nav */
+.navigation {
+  display: flex;
+  flex-grow: 2;
+  list-style: none;
+  margin: 0 0;
+}
 
 header {
-
+  display: flex;
+  justify-content: space-around;
 }
 
 header .logo, header nav {
-
+  margin: 0 0;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .container .aboutrow {
+  display: flex;
+  flex-direction: row;
 
 }
 
@@ -18,33 +32,40 @@ header .logo, header nav {
 /* feature */
 
 .feature {
-
+  display: flex;
+  flex-direction: row;
 }
+
+
 
 /* cta */
 
 .cta .container {
-
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }
 
+.cta a {
+  height: 25px;
+  margin-top: 20px;
+}
 
 /* footer */
 
 footer {
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer-left {
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-grow: 2;
 }
 
-.footer-left .footer-col {
-
-}
-
-.footer-right {
-
-}
 
 /* ======+++++======++++=====+++=== */
 /* ======+++++======++++=====+++=== */
@@ -129,6 +150,8 @@ nav ul li {
   padding: 5px 15px;
   text-decoration:none;
   transition: all 0.2s;
+  width: 100px;
+  margin: 0 auto;
 }
 
 .aboutbtn:hover, .contactbtn:hover {
@@ -182,10 +205,13 @@ nav ul li {
   background-image: url('../assets/glacier.jpg');
   background-size:cover;
   background-position:center center;
+  width: 100%;
+  flex-grow: 2;
 }
 
 .feat-right {
   padding: 50px;
+  width: 100%;
 }
 
 .feat-right p {
@@ -216,6 +242,7 @@ footer {
   color: #ddd;
   padding: 50px;
   text-align: center;
+
 }
 
 .footer-col {
@@ -226,6 +253,10 @@ footer a {
   color: #d0a064;
   text-decoration: none;
 
+}
+
+.footernav {
+  list-style: none;
 }
 
 input {
