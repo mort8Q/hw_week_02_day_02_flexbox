@@ -4,6 +4,13 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+
+.main {
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
